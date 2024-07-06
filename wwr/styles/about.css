@@ -1,11 +1,9 @@
 .header-section {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    float: left;
-}
-.logo{
-    margin-left: 0;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   justify-items: center;
+   margin: auto;
 }
 
 body {
@@ -30,12 +28,13 @@ header img {
 }
 
 nav {
+    display: flex;
     text-align: left;
     margin-bottom: 20px;
 }
 
 nav a {
-    color: #841e23; /* Delft blue nav link color */
+    color: #841e23; 
     text-decoration: none;
     margin: 0 10px 0 0;
 }
@@ -51,8 +50,10 @@ nav a:hover {
 }
 
 .section {
+    display: flex;
+    flex-direction:column;
     padding: 0px;
-    text-align: left;
+    text-align: center;
 }
 
 .section h2 {
@@ -66,8 +67,8 @@ nav a:hover {
 
 .gallery {
     display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
+    flex-direction:row;
+    max-width: 100%;
     gap: 0px;
     margin: 0px;
     padding: 0px;
@@ -96,13 +97,21 @@ nav a:hover {
 }
 
 footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: left;
     background-color: #007BA7;
     margin: 0px;
 }
+.footer-text {
+    grid-column: 2;
+}
 
 .sociallinks {
+    grid-column: 3;
     margin-top: 10px;
+    float: right;
+    justify-content: flex-end;
 }
 
 .sociallinks a {
