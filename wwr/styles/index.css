@@ -50,6 +50,8 @@ h1 {
 
 .img_deg {
     float: right;
+    width: 150px; 
+    height: auto;
 }
 
 .aside-text {
