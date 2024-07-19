@@ -9,7 +9,7 @@ header, footer, .grid {
     margin: 0 auto;
 }
 
-header .navigation {
+.navigation {
     display: flex;
     flex-direction: row;
     background-color: rgb(67, 67, 185);
@@ -19,7 +19,7 @@ header .navigation {
     align-items: center;
 }
 
-header .navigation a {
+.navigation a {
     margin: 10px;
     color: white;
     text-decoration: none;
@@ -76,7 +76,7 @@ main {
 }
 
 p {
-    padding: 0;
+    padding: 0; /* Ensure no extra padding if it's required */
 }
 
 footer {
