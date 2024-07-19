@@ -22,7 +22,7 @@ header .navigation {
 header .navigation a {
     margin: 10px;
     color: white;
-    text-decoration: none; /* Ensures links have no underline */
+    text-decoration: none;
 }
 
 h1 {
@@ -76,7 +76,7 @@ main {
 }
 
 p {
-    padding: 0; /* If specific padding is required, adjust accordingly */
+    padding: 0;
 }
 
 footer {
