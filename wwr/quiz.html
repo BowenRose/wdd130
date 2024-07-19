@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML and CSS Quiz</title>
+    <meta name="description" content="A quiz to test knowledge on HTML and CSS">
+    <meta name="author" content="Your Name">
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <h1>HTML and CSS Quiz</h1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Quiz Questions</legend>
+            
+            <!-- Question 1: Text Input -->
+            <label for="q1">What does HTML stand for?</label>
+            <input type="text" id="q1" name="q1" required>
+            
+            <!-- Question 2: Textarea -->
+            <label for="q2">Explain the purpose of CSS.</label>
+            <textarea id="q2" name="q2" rows="4" cols="50" required></textarea>
+            
+            <!-- Question 3: Select -->
+            <label for="q3">Which HTML element is used to define the document's title?</label>
+            <select id="q3" name="q3" required>
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="title">title</option>
+                <option value="header">header</option>
+                <option value="body">body</option>
+            </select>
+            
+            <!-- Question 4: Number Input -->
+            <label for="q4">How many pixels is the default font size in most browsers?</label>
+            <input type="number" id="q4" name="q4" required>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit Quiz</button>
+        </fieldset>
+    </form>
+</body>
+</html>
