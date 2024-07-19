@@ -1,5 +1,4 @@
-\/* Global Styles */
-
+/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -13,23 +12,28 @@ header {
     background-color: var(--header-bg-color);
 }
 
-.header-section {
-    display: flex;
-    justify-content: space-between;
+.header-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
     height: 100px;
-    padding-left: 200px;
 }
 
-nav a {
-    margin: 0 10px;
-    padding-right: 50px;
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links a {
+    margin: 0 15px;
     text-decoration: none;
-    color: var(--main-text-color);
+    color: var(--header-text-color);
 }
 
 /* Main styles */
@@ -37,11 +41,45 @@ main {
     padding: 1rem;
 }
 
-.main-image {
-    width: 100%; /* Makes the image responsive */
-    height: auto; /* Maintains aspect ratio */
-    display: block;
+/* Intro Section Styles */
+.intro {
+    position: relative;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: black;
+    color: #fff;
+}
+
+.intro-title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--intro-title-color);
     margin-bottom: 1rem;
+    padding-bottom: 25px;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.intro-text {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 2rem;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.intro-image {
+    flex: 1;
+    max-width: 400px;
+    height: auto;
+    display: block;
 }
 
 /* Section styles */
@@ -49,13 +87,55 @@ main {
     margin-bottom: 2rem;
 }
 
-.history, .adventure {
+.history {
     text-align: center;
 }
 
-.history h2, .adventure h2 {
-    margin: 0 auto;
+.history h2 {
+    margin: 0;
     padding: 1rem 0;
+    color: var(--section-title-color);
+}
+
+.history-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.history-text {
+    flex: 1;
+    margin: 0 1rem;
+    max-width: 45%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.history-image {
+    flex: 1;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 1rem;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Adventure Section Styles */
+.adventure {
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+
+.adventure h2 {
+    margin: 0;
+    padding: 1rem 0;
+    color: var(--section-title-color);
 }
 
 /* Gallery Styles */
@@ -63,13 +143,12 @@ main {
     display: flex;
     flex-wrap: nowrap;
     gap: 1rem;
-    overflow-x: auto; /* Allows horizontal scrolling if images exceed container width */
-    padding-bottom: 1rem; /* Space for horizontal scroll */
+    overflow-x: auto;
+    padding-bottom: 1rem;
 }
 
 .gallery-item {
-    flex: 1 1 200px; /* Allows items to grow but keeps them at least 200px wide */
-    box-sizing: border-box;
+    flex: 1 0 200px;
     max-width: 200px;
 }
 
@@ -90,51 +169,29 @@ main {
 footer {
     background-color: var(--footer-bg-color);
     color: var(--footer-text-color);
-    padding: 20px;
+    padding-top: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-text {
     margin: 0;
     text-align: center;
-    padding-left: 350px;
     flex: 1;
 }
 
 .sociallinks {
     display: flex;
-    gap: 0px;
+    gap: 1rem;
 }
 
-.sociallinks a {
+.social-link {
     text-decoration: none;
 }
 
 .social-icon {
     height: 30px;
-}
-
-.hidden-h1 {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    clip-path: inset(50%);
-    white-space: nowrap; /* 1 */
-    
-}
-/* CSS Variables for consistent theming */
-:root {
-    --header-bg-color: #333;
-    --header-text-color: #fff;
-    --main-text-color: #ffffff;
-    --main-bg-color: #f4f4f4;
-    --footer-bg-color: #333;
-    --footer-text-color: #fff;
 }
