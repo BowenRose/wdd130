@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="Contact Great River Rafting.">
+    <meta name="author" content="Bowen Rose">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <div class="header-grid">
+            <img src="images/logo.png" alt="Rafting Site Logo" class="logo">
+            <nav class="nav-links">
+                <a href="index.html">Index</a>
+                <a href="about.html">About Us</a> 
+                <a href="trips.html">Trips</a> 
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="section history">
+            <h2>Our Information</h2>
+            <ul>
+                <li>
+                    5555 Waverly Place
+                </li>
+                <li>
+                    (208)-555-5555
+                </li>
+                <li>
+                    greatriverrafting@gmail.com
+                </li>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2294.3436373272043!2d-112.37279992091325!3d42.80783942854426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1721506362673!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </ul>
+        </section>
+        
+        <section class="section adventure">
+            <h2>Our Employees</h2>
+            <div class="gallery">
+                <figure class="gallery-item">
+                    <img src="wwr/images/craig.jpg" alt="Craig Lovely">
+                    <figcaption>Craig Lovely</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="wwr/images/paul.jpg" alt="Paul Gooden">
+                    <figcaption>Paul Gooden</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="wwr/images/steve-francis.jpg" alt="Steve Francis">
+                    <figcaption>Steve Francis</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="wwr/images/joe-smith.jpg" alt="Joe Smith">
+                    <figcaption>Joe Smith</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="wwr/images/naz-reid.jpg" alt="Naz Reid">
+                    <figcaption>Naz Reid</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    
+                    <!-- Question 1: Text Input -->
+                    <label for="q1">Name</label>
+                    <input type="text" id="q1" name="q1" required>
+                    
+                    <!-- Question 2: Textarea -->
+                    <label for="q2">E-mail</label>
+                    <input type="email" id="q2" name="q2" required>
+                    
+                    <!-- Question 3: Select -->
+                    <br>
+                    <label for="general">
+                        <input type="radio" id="general" name="reason" value="general inquiry">
+                        General Inquiry
+                    </label>
+                    <label for="reservation"><input type="radio" id="reservation" name="reason" value="reservation question">Reservation Question</label>
+                    <label for="suggestion"> <input type="radio" id="suggestion" name="reason" value="website suggestion">Website Suggestion</label>
+                    <label for="q4">Message</label>
+                    <textarea id="q4" name="q4" rows="4" cols="50" required></textarea>
+
+                    <label for="q5"><input type="checkbox" name="q5" id="q5" required>Subscribe to our news letter</label>
+                    
+                    
+                    <!-- Submit Button -->
+                    <button type="submit">Submit Quiz</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-text">©2024 🚣 White Water Rafting 🚣 Bowen Rose</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com" class="social-link">
+                <img src="images/facebook.jpg" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://twitter.com" class="social-link">
+                <img src="images/twitter.jpg" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://instagram.com" class="social-link">
+                <img src="images/instagram.jpg" alt="Instagram" class="social-icon">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
