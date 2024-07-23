@@ -1,14 +1,29 @@
+/* Universal Selector */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* Header and Footer */
 header, footer, .grid {
     max-width: 840px;
     margin: 0 auto;
 }
 
+header {
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 2px solid black;
+    padding-top: 12px;
+}
+
+/* Navigation Styles */
 .navigation {
     display: flex;
     flex-direction: row;
@@ -25,42 +40,33 @@ header, footer, .grid {
     text-decoration: none;
 }
 
+/* Heading */
 h1 {
     border-bottom: 2px solid blue;
     padding-top: 72px;
     padding-bottom: 12px;
 }
 
+/* Grid Layout */
 .grid {
     display: grid;
     align-items: start;
     grid-template-columns: 1fr 2fr;
 }
 
+/* Section */
 .section {
     padding: 60px;
 }
 
-.box {
-    padding: 1rem;
-    margin: 1rem;
-    background-color: bisque;
-    color: rgb(0, 0, 0);
-}
-
+/* Profile Image */
 .img_deg {
     float: right;
     width: 150px; 
     height: auto;
 }
 
-.aside-text {
-    position: absolute;
-    top: 90px;
-    left: 110px;
-    color: white;
-}
-
+/* Aside Styles */
 aside {
     margin-top: 0;
     position: relative;
@@ -68,23 +74,42 @@ aside {
     grid-row: 1 / 2;
 }
 
-aside img {
+.image-container {
+    position: relative;
     width: 100%;
     height: auto;
 }
 
+.aside-img {
+    width: 100%;
+    height: auto;
+}
+
+.aside-text {
+    position: absolute;
+    top: 50%; /* Center vertically in the image */
+    left: 50%; /* Center horizontally in the image */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white;
+    font-size: 2rem; /* Adjust as needed for visibility */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background for better visibility */
+    padding: 0.5rem; /* Optional: padding for text readability */
+}
+
+/* Main */
 main {
     grid-column: 2 / 3;
 }
 
+/* Paragraphs */
 p {
-    padding: 0; /* Ensure no extra padding if it's required */
+    padding: 0;
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    border-top: 2px solid black;
-    padding-top: 12px;
+/* Box Class */
+.box {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
 }
