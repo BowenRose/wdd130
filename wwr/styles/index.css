@@ -77,7 +77,6 @@ aside {
 .image-container {
     position: relative;
     width: 100%;
-    height: auto;
 }
 
 .aside-img {
@@ -112,4 +111,22 @@ p {
     margin: 1rem;
     background-color: bisque;
     color: rgb(0, 0, 0);
+}
+
+/* Navigation CSS Rule */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(67, 67, 185);
+    color: white;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Navigation Anchor CSS Rule */
+.navigation a {
+    margin: 10px;
+    color: white;
+    text-decoration: none;
 }
