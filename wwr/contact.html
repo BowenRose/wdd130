@@ -6,20 +6,24 @@
     <title>Contact Great River Rafting</title>
     <meta name="description" content="Contact Great River Rafting.">
     <meta name="author" content="Bowen Rose">
-    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="wwr/styles/rafting.css"> <!-- Link to your CSS file -->
 </head>
+
 <body>
+
     <header>
-        <div class="header-grid">
-            <img src="images/logo.png" alt="Rafting Site Logo" class="logo">
-            <nav class="nav-links">
-                <a href="index.html">Index</a>
-                <a href="about.html">About Us</a> 
-                <a href="trips.html">Trips</a> 
-                <a href="contact.html">Contact Us</a>
-            </nav>
-        </div>
-    </header>
+    <div class="container">
+        <img src="wwr/images/logo.jpg" alt="Wild Water Rafting Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
     
     <main>
         <h1>contact us</h1>
@@ -64,6 +68,7 @@
                 </figure>
             </div>
         </section>
+        
         <section>
             <form action="#" method="post">
                 <fieldset>
@@ -73,45 +78,64 @@
                     <label for="q1">Name</label>
                     <input type="text" id="q1" name="q1" required>
                     
-                    <!-- Question 2: Textarea -->
+                    <!-- Question 2: Text Input -->
                     <label for="q2">E-mail</label>
                     <input type="email" id="q2" name="q2" required>
                     
-                    <!-- Question 3: Select -->
-                    <br>
-                    <label for="general">
-                        <input type="radio" id="general" name="reason" value="general inquiry">
-                        General Inquiry
-                    </label>
-                    <label for="reservation"><input type="radio" id="reservation" name="reason" value="reservation question">Reservation Question</label>
-                    <label for="suggestion"> <input type="radio" id="suggestion" name="reason" value="website suggestion">Website Suggestion</label>
+                    <!-- Question 3: Radio Buttons -->
+                    <div>
+                        <label for="general">
+                            <input type="radio" id="general" name="reason" value="general inquiry">
+                            General Inquiry
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <label for="reservation">
+                            <input type="radio" id="reservation" name="reason" value="reservation question">
+                            Reservation Question
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <label for="suggestion">
+                            <input type="radio" id="suggestion" name="reason" value="website suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+                    
+                    <!-- Question 4: Textarea -->
                     <label for="q4">Message</label>
                     <textarea id="q4" name="q4" rows="4" cols="50" required></textarea>
 
-                    <label for="q5"><input type="checkbox" name="q5" id="q5" required>Subscribe to our news letter</label>
-                    
+                    <!-- Question 5: Checkbox -->
+                    <label for="q5">
+                        <input type="checkbox" name="q5" id="q5" required>
+                        Subscribe to our newsletter
+                    </label>
                     
                     <!-- Submit Button -->
-                    <button type="submit">Submit Quiz</button>
+                    <button type="submit">Submit</button>
                 </fieldset>
             </form>
         </section>
     </main>
 
     <footer>
-        <p class="footer-text">©2024 🚣 White Water Rafting 🚣 Bowen Rose </p>
+        <p class="footer-text">©2024 🚣 White Water Rafting 🚣 Bowen Rose</p>
         <nav>
-            <a href="https://app.moqups.com/CLYtzIkV3GjUJD7qDI5c3eMHdXTVZ0Ds/view/page/ad64222d5">Wireframe</a>
+            <a href="https://app.moqups.com/QpW0WBNvlu8hOZFoLsmfvDIWl8FwXdvI/view/page/ad64222d5">Home Wireframe</a>
+            <a href="https://app.moqups.com/CLYtzIkV3GjUJD7qDI5c3eMHdXTVZ0Ds/view/page/ad64222d5">Trips Wireframe</a>
         </nav>
         <nav class="sociallinks">
             <a href="https://facebook.com" class="social-link">
-                <img src="images/facebook.jpg" alt="Facebook" class="social-icon">
+                <img src="wwr/images/facebook.jpg" alt="Facebook" class="social-icon">
             </a>
             <a href="https://twitter.com" class="social-link">
-                <img src="images/twitter.jpg" alt="Twitter" class="social-icon">
+                <img src="wwr/images/twitter.jpg" alt="Twitter" class="social-icon">
             </a>
             <a href="https://instagram.com" class="social-link">
-                <img src="images/instagram.jpg" alt="Instagram" class="social-icon">
+                <img src="wwr/images/instagram.jpg" alt="Instagram" class="social-icon">
             </a>
         </nav>
     </footer>
