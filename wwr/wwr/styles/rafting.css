@@ -278,7 +278,6 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
     gap: 0px;
-    display: center;
 }
 
 .trip img {
@@ -303,7 +302,6 @@ a:hover {
     max-width: 200px;
 }
 
-}
 .newsletter-signup h2 {
     font-size: 2rem;
     margin-bottom: 20px;
