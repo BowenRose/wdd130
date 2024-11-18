@@ -1,0 +1,78 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/* Define CSS Variables */
+:root {
+    --primary-color: #FB3640;
+    --secondary-color: #605F5E;
+    --accent1-color: #1D3461;
+    --accent2-color: #247BA0;
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --nav-background-color: #FB3640;
+    --nav-link-color: #605F5E;
+    --nav-hover-link-color: #1D3461;
+    --nav-hover-background-color: #247BA0;
+}
+
+
+/* Apply Styles */
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto; /* Center the body content */
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+
+p {
+    padding: 10px 0; /* Adjust padding for paragraphs */
+}
+
+
+nav {
+    background-color: var(--nav-background-color);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around; /* Center the nav items */
+    padding: 0.5rem 0; /* Add padding for nav */
+}
+
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+nav a:link {
+    color: var(--nav-link-color);
+}
+
+
+nav a:visited {
+    color: var(--nav-link-color);
+}
+
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+
