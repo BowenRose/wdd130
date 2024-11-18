@@ -28,7 +28,12 @@ main {
 }
 
 aside {
+    width: fit-content;
+    margin: 10px;
+    border: 1px;
+    padding: 5px;
     background-color: aqua;
+    color: blueviolet;
 }
 
 aside img {
