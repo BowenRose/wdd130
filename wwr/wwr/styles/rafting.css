@@ -1,102 +1,80 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f2f2f2;
-    color: #333;
-}
-
-
-.header-grid {
-    display: grid;
-    grid-template-columns: auto 1fr;
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between; /* Align logo to left and nav to right */
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
 }
 
+.logo-container {
+    flex: 1;
+}
 
 .logo {
-    height: 50px;
+    max-width: 150px; /* Adjust as needed */
+    height: auto;
 }
 
-
-.nav-links {
+nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Aligns the nav items to the right */
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+}
 
-.nav-links a {
-    color: #fff;
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
-    padding: 10px;
-    transition: background-color 0.3s ease;
+    color: #000;
+    font-size: 16px;
 }
 
-
-.nav-links a:hover {
-    background-color: #555;
-}
-
-
+/* Main Section Styling */
 main {
     padding: 20px;
 }
 
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-
-.section {
+/* Hero Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 
-
-.history {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.intro-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    width: 50%; /* Adjust width to fit text alongside the image */
 }
 
-
-.history h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+.intro-content {
+    display: flex;
+    justify-content: space-between;
 }
 
-
-.history ul {
-    list-style-type: none;
-    font-size: 1.1rem;
+.intro-text {
+    flex: 1;
 }
 
-
-.history ul li {
-    margin-bottom: 10px;
+.intro-image {
+    max-width: 45%; /* Adjust image size */
+    height: auto;
 }
 
-
-.map {
-    width: 100%;
-    height: 400px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 10px;
-}
-
-
+/* Adventure Section */
 .adventure {
     background-color: #fff;
     padding: 20px;
@@ -104,12 +82,10 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .adventure h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
-
 
 .gallery {
     display: grid;
@@ -117,24 +93,78 @@ h1 {
     gap: 20px;
 }
 
-
 .gallery-item {
     text-align: center;
 }
 
-
 .gallery-item img {
     width: 100%;
-    border-radius: 50%;
+    border-radius: 50%; /* Makes the images circular */
 }
-
 
 .gallery-item figcaption {
     margin-top: 10px;
     font-size: 1rem;
 }
 
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    margin-top: 40px;
+}
 
+.footer-text {
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.sociallinks {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+    transform: scale(1.2);
+}
+
+/* Specific Fixes */
+
+/* Hero Image Floated to the Right */
+.intro-image {
+    float: right;
+    margin-left: 20px; /* Adds some space between text and image */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Remove Text-Decoration from Social Links */
+.social-link a {
+    text-decoration: none;
+}
+
+/* Add some padding to the form and remove unnecessary styles */
 form {
     margin-top: 40px;
     padding: 20px;
@@ -143,13 +173,12 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-
+/* Form Styling */
 fieldset {
     border: none;
     padding: 0;
     margin-bottom: 20px;
 }
-
 
 legend {
     font-size: 1.5rem;
@@ -157,12 +186,10 @@ legend {
     margin-bottom: 10px;
 }
 
-
 label {
     display: block;
     margin-bottom: 5px;
 }
-
 
 input[type="text"],
 input[type="email"],
@@ -175,17 +202,14 @@ textarea {
     margin-bottom: 10px;
 }
 
-
 input[type="radio"],
 input[type="checkbox"] {
     margin-right: 10px;
 }
 
-
 textarea {
     resize: vertical;
 }
-
 
 button {
     background-color: #ff6600;
@@ -198,59 +222,12 @@ button {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 button:hover {
     background-color: #e65c00;
 }
 
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    margin-top: 40px;
+/* Footer Social Media Icons */
+.social-link img {
+    max-width: 30px; /* Adjust size of social media icons */
+    height: auto;
 }
-
-
-.footer-text {
-    font-size: 0.9rem;
-}
-
-
-footer a {
-    color: #ff6600;
-    text-decoration: none;
-}
-
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-
-.sociallinks {
-    margin-top: 20px;
-}
-
-
-.social-link {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-
-.social-icon {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-
-.social-link:hover .social-icon {
-    transform: scale(1.2);
-}
-
-
