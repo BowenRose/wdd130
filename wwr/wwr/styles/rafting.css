@@ -56,12 +56,14 @@ main {
 
 .intro-title {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 100%; /* Adjust width to fit text alongside the image */
 }
 
 .intro-content {
     display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
     justify-content: space-between;
 }
 
@@ -135,8 +137,9 @@ footer a:hover {
 }
 
 .social-link {
-    display: inline-block;
+    
     margin-right: 10px;
+    
 }
 
 .social-icon {
@@ -150,21 +153,16 @@ footer a:hover {
     transform: scale(1.2);
 }
 
-/* Specific Fixes */
-
-/* Hero Image Floated to the Right */
 .intro-image {
     float: right;
-    margin-left: 20px; /* Adds some space between text and image */
-    border-radius: 8px; /* Optional: Rounded corners */
+    margin-left: 20px;
+    border-radius: 8px; 
 }
 
-/* Remove Text-Decoration from Social Links */
 .social-link a {
     text-decoration: none;
 }
 
-/* Add some padding to the form and remove unnecessary styles */
 form {
     margin-top: 40px;
     padding: 20px;
@@ -173,7 +171,6 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Form Styling */
 fieldset {
     border: none;
     padding: 0;
