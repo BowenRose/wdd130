@@ -1,15 +1,5 @@
-/* :root pseudo-class selector for defining CSS variables */
-:root {
-    --primary-color: #ff6600; /* Main color */
-    --secondary-color: #333; /* Dark background color */
-    --accent-color: #e65c00; /* Accent color */
-    --text-color: #000; /* Main text color */
-    --link-color: #ff6600; /* Link color */
-    --link-hover-color: #e65c00; /* Link hover color */
-    --background-color: #f9f9f9; /* General background color */
-    --border-color: #ccc; /* Border color */
-    --footer-bg-color: #333; /* Footer background color */
-}
+/* Preconnect to Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;700&display=swap');
 
 /* General Reset */
 * {
@@ -21,7 +11,7 @@
 /* Header Styling */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Align logo to left and nav to right */
     align-items: center;
     padding: 10px 20px;
 }
@@ -31,13 +21,13 @@ header {
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 150px; /* Adjust as needed */
     height: auto;
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 
 nav ul {
@@ -51,18 +41,19 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--text-color); /* Using color variable */
+    color: #000;
     font-size: 16px;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 }
 
 /* Main Section Styling */
 main {
     padding: 20px;
+    font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
 }
 
 /* Hero Section */
 .hero {
-    position: relative; /* Added to allow absolute positioning inside */
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
@@ -71,10 +62,8 @@ main {
 .hero-title {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    width: 100%;
-    position: absolute; /* Position the title on top of the hero image */
-    top: 20px;
-    left: 20px;
+    width: 100%; /* Adjust width to fit text alongside the image */
+    font-family: 'Poppins', sans-serif;
 }
 
 .hero-content {
@@ -89,11 +78,9 @@ main {
 }
 
 .hero-image {
-    max-width: 40%;
+    max-width: 40%; /* Adjust image size */
     height: auto;
-    float: right; /* Image floated to the right */
-    margin-left: 20px;
-    border-radius: 8px;
+    float: right;
 }
 
 /* Adventure Section */
@@ -107,6 +94,7 @@ main {
 .adventure h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .gallery {
@@ -121,7 +109,7 @@ main {
 
 .gallery-item img {
     width: 100%;
-    border-radius: 50%;
+    border-radius: 50%; /* Makes the images circular */
 }
 
 .gallery-item figcaption {
@@ -131,12 +119,13 @@ main {
 
 /* Footer Styling */
 footer {
-    background-color: var(--footer-bg-color); /* Using color variable */
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
     position: relative;
     margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .footer-text {
@@ -144,7 +133,7 @@ footer {
 }
 
 footer a {
-    color: var(--link-color); /* Using color variable */
+    color: #ff6600;
     text-decoration: none;
 }
 
@@ -174,18 +163,17 @@ footer a:hover {
 .hero-image {
     float: right;
     margin-left: 20px;
-    border-radius: 8px;
+    border-radius: 8px; 
 }
 
 .social-link a {
     text-decoration: none;
 }
 
-/* Form Styling */
 form {
     margin-top: 40px;
     padding: 20px;
-    background-color: var(--background-color); /* Using color variable */
+    background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -213,7 +201,7 @@ textarea {
     width: 100%;
     padding: 8px;
     font-size: 1rem;
-    border: 1px solid var(--border-color); /* Using color variable */
+    border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -228,7 +216,7 @@ textarea {
 }
 
 button {
-    background-color: var(--primary-color); /* Using color variable */
+    background-color: #ff6600;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -239,5 +227,5 @@ button {
 }
 
 button:hover {
-    background-color: var(--accent-color); /* Using color variable */
+    background-color: #e65c00;
 }
