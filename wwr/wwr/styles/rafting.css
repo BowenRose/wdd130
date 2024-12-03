@@ -3,14 +3,14 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .poppins-regular {
+}
+
+.poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 /* General Reset */
 * {
     margin: 0;
@@ -20,24 +20,26 @@
 
 /* Header Styling */
 header {
-    display: flex;
-    justify-content: space-between; /* Align logo to left and nav to right */
+    display: grid;
+    grid-template-columns: 1fr auto; /* Two columns: one for logo, the other for navigation */
     align-items: center;
-    padding: 10px 20px;
+    padding: 20px 40px;
+    background-color: #1d3461;
 }
 
 .logo-container {
-    flex: 1;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .logo {
-    max-width: 150px; /* Adjust as needed */
+    max-width: 150px;
     height: auto;
 }
 
 nav {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 nav ul {
@@ -60,42 +62,81 @@ nav ul li a {
 main {
     padding: 20px;
     font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
+    background-color: #605F5E;
 }
 
 /* Hero Section */
 .hero {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-bottom: 40px;
 }
 
 .hero-title {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    width: 100%; /* Adjust width to fit text alongside the image */
+    font-size: 3rem;
+    margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
 .hero-content {
     display: flex;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    gap: 20px;
 }
 
 .hero-text {
-    flex: 1;
+    max-width: 60%;
+    text-align: left;
 }
 
 .hero-image {
-    max-width: 40%; /* Adjust image size */
+    max-width: 35%; /* Adjust image size */
     height: auto;
-    float: right;
+    border-radius: 8px;
+}
+
+/* History Section */
+.history {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.history-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.history-text {
+    padding: 10px;
+}
+
+.history-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
 /* Adventure Section */
 .adventure {
-    background-color: #fff;
+    background-color: #1d3461;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -170,16 +211,11 @@ footer a:hover {
     transform: scale(1.2);
 }
 
-.hero-image {
-    float: right;
-    margin-left: 20px;
-    border-radius: 8px; 
-}
-
 .social-link a {
     text-decoration: none;
 }
 
+/* Form Styles */
 form {
     margin-top: 40px;
     padding: 20px;
