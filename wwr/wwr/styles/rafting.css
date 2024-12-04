@@ -13,17 +13,15 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Header Styling */
 header {
     display: grid;
-    grid-template-columns: 1fr auto; /* Two columns: one for logo, the other for navigation */
+    grid-template-columns: 1fr auto; 
     align-items: center;
     padding: 20px 40px;
     background-color: #1d3461;
@@ -57,12 +55,12 @@ nav ul li a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+    font-family: 'Poppins', sans-serif; 
 }
 
 main {
     padding: 20px;
-    font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
+    font-family: 'Open Sans', sans-serif; 
     background-color: #605F5E;
 }
 
@@ -95,12 +93,11 @@ main {
 }
 
 .hero-image {
-    max-width: 35%; /* Adjust image size */
+    max-width: 35%; 
     height: auto;
     border-radius: 8px;
 }
 
-/* History Section */
 .history {
     margin-top: 40px;
     padding: 20px;
@@ -134,7 +131,7 @@ main {
     border-radius: 8px;
 }
 
-/* Adventure Section */
+
 .adventure {
     background-color: #1d3461;
     padding: 20px;
@@ -160,7 +157,7 @@ main {
 
 .gallery-item img {
     width: 100%;
-    border-radius: 50%; /* Makes the images circular */
+    border-radius: 50%; 
 }
 
 .gallery-item figcaption {
@@ -168,7 +165,6 @@ main {
     font-size: 1rem;
 }
 
-/* Footer Styling */
 footer {
     background-color: #333;
     color: #fff;
@@ -215,7 +211,6 @@ footer a:hover {
     text-decoration: none;
 }
 
-/* Form Styles */
 form {
     margin-top: 40px;
     padding: 20px;
@@ -282,14 +277,14 @@ section > div {
 
 figure {
     text-align: center;
-    max-width: 150px; /* Limit the size of each figure */
+    max-width: 150px;
 }
 
 figure img {
     width: 100%;
     height: 65%;
     border-radius: 50%;
-    border: 5px solid #ddd; /* Add a border to create a cleaner look */
+    border: 5px solid #ddd; 
 }
 
 figcaption {
