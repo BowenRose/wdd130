@@ -310,3 +310,15 @@ button:hover {
     font-weight: bold;
 }
 
+iframe {
+    width: 80%;
+    height: 300px;
+}
+
+.google-map {
+    padding-left: 20%;
+}
+
+.google-map h2 {
+    padding-left: 27%;
+}
