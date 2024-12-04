@@ -271,43 +271,33 @@ button:hover {
     background-color: #e65c00;
 }
  
-.employee-gallery {
-    margin-top: 40px;
+section > div {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+figure {
     text-align: center;
+    max-width: 150px; /* Limit the size of each figure */
+}
+
+figure img {
+    width: 100%;
+    height: 65%;
+    border-radius: 50%;
+    border: 5px solid #ddd; /* Add a border to create a cleaner look */
+}
+
+figcaption {
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
 .employee-gallery h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-}
-
-/* Employee Container */
-.employee-container {
-    display: flex;
-    justify-content: space-around; /* Distribute items evenly */
-    flex-wrap: wrap; /* Allow wrapping if screen size is small */
-    gap: 20px; /* Add space between items */
-}
-
-/* Employee Item (Individual Image and Caption) */
-.employee-item {
-    width: 150px; /* Set a fixed width */
-    text-align: center;
-}
-
-.employee-item img {
-    width: 100%; /* Ensure image fills the width of the container */
-    height: 150px; /* Fixed height for uniformity */
-    object-fit: cover; /* Ensures image maintains aspect ratio without stretching */
-    border-radius: 50%; /* Circle the images */
-    border: 2px solid #ccc; /* Light border around the image */
-}
-
-/* Caption Styling */
-.employee-item figcaption {
-    margin-top: 10px;
-    font-size: 1rem;
-    font-weight: bold;
 }
 
 iframe {
@@ -316,9 +306,9 @@ iframe {
 }
 
 .google-map {
-    padding-left: 20%;
+    padding-left: 0%;
 }
 
 .google-map h2 {
-    padding-left: 27%;
+    padding-left: 41%;
 }
