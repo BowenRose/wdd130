@@ -1,4 +1,4 @@
-/* Preconnect to Google Fonts */
+
 .bebas-neue-regular {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
@@ -58,14 +58,12 @@ nav ul li a {
     font-family: 'Poppins', sans-serif; /* Apply Poppins font */
 }
 
-/* Main Section Styling */
 main {
     padding: 20px;
     font-family: 'Open Sans', sans-serif; /* Apply Open Sans font */
     background-color: #605F5E;
 }
 
-/* Hero Section */
 .hero {
     display: flex;
     flex-direction: column;
@@ -314,3 +312,4 @@ button:hover {
     font-size: 1rem;
     font-weight: bold;
 }
+
