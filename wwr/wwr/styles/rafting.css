@@ -1,4 +1,3 @@
-
 .bebas-neue {
     font-family: "Bebas Neue", sans-serif;
 }
@@ -7,7 +6,7 @@
     font-family: "Roboto", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 .poppins {
     font-family: "Poppins", sans-serif;
@@ -76,6 +75,7 @@ main {
     font-size: 3rem;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 .hero-content {
@@ -93,9 +93,10 @@ main {
 }
 
 .hero-image {
-    max-width: 35%; 
-    height: auto;
+    width: 100%; 
+    height: 450px;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .history {
@@ -112,7 +113,7 @@ main {
 
 .history-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
@@ -124,6 +125,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .history-img {
@@ -131,38 +133,80 @@ main {
     border-radius: 8px;
 }
 
-
-.adventure {
-    background-color: #1d3461;
-    padding: 20px;
+.newsletter-signup {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
     border-radius: 10px;
+    margin-top: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.adventure h2 {
-    font-size: 2rem;
+.newsletter-signup h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+.newsletter-signup p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
-.gallery-item {
-    text-align: center;
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.gallery-item img {
-    width: 100%;
-    border-radius: 50%; 
-}
-
-.gallery-item figcaption {
-    margin-top: 10px;
+label {
     font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
 }
 
 footer {
@@ -211,63 +255,27 @@ footer a:hover {
     text-decoration: none;
 }
 
-form {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-fieldset {
-    border: none;
-    padding: 0;
-    margin-bottom: 20px;
+.history-text {
+    padding: 10px;
 }
 
-legend {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+.history-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+.history-img {
+    max-width: 100%;
+    border-radius: 8px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    resize: vertical;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-button {
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-button:hover {
-    background-color: #e65c00;
-}
- 
 section > div {
     display: flex;
     justify-content: space-around;
@@ -309,9 +317,230 @@ iframe {
 .google-map h2 {
     padding-left: 41%;
 }
+ 
+/* Trips Page Specific Styles */
+.trip-hero {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Adjust as per your design */
+    background-image: url('background-images/trips-hero.jpg'); /* Replace with your image path */
+    background-size: cover;  /* Ensures image covers the whole section */
+    background-position: center center;  /* Centers the image */
+    color: white;  /* White text for better visibility on the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden; /* Prevents any image overflow */
+}
 
-.roboto-regular {
-    font-family: "Roboto", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+/* Hero Content Styling */
+.trip-hero .hero-content {
+    position: relative;
+    z-index: 2; /* Ensures the content appears on top of the background image */
+    max-width: 80%;
+    padding: 20px;
+}
+
+.trip-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trip-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.trip-cta {
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.trip-cta:hover {
+    background-color: #e65c00;
+}
+
+@media (max-width: 768px) {
+    .trip-hero h1 {
+        font-size: 2rem; /* Adjust for smaller screens */
+    }
+
+    .trip-hero p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    .trip-cta {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+
+.trip-cta {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.trip-cta:hover {
+    background-color: #e65c00;
+}
+
+/* Trip Cards Layout */
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.trip-card {
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.trip-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trip-info {
+    padding: 20px;
+}
+
+.trip-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trip-info p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Trips Table */
+.trip-table {
+    margin-top: 50px;
+    width: 100%;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+.trip-table th, .trip-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.trip-table th {
+    background-color: #1d3461;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.trip-table td {
+    background-color: #f9f9f9;
+}
+
+.trip-table td a {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.trip-table td a:hover {
+    background-color: #e65c00;
+}
+
+
+/* Trip Cards Section */
+.trip-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    padding: 20px;
+}
+
+.trip-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.trip-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Make sure the image fits well in the box */
+}
+
+.trip-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.trip-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.trip-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #555; /* Set a darker color for better visibility */
+}
+
+.trip-info a {
+    text-decoration: none;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.trip-info a:hover {
+    background-color: #e65c00;
+}
+
+
+
+
+
+
