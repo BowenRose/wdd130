@@ -8,6 +8,7 @@
     font-style: normal;
 }
 
+
 .poppins {
     font-family: "Poppins", sans-serif;
 }
@@ -100,31 +101,33 @@ main {
 }
 
 .history {
-    margin-top: 40px;
-    padding: 0px;
+    margin-top: 20px;
+    padding: 50px;
 }
 
 .history-title {
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-family: 'Poppins', sans-serif;
 }
 
 .history-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
 }
 
 .history-text {
-    padding: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
 .history-image {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .history-img {
@@ -322,7 +325,7 @@ iframe {
     background-image: url('background-images/trips-hero.jpg');
     background-size: cover;
     background-position: center;
-    padding: 100px 20px; /* Increased padding for better spacing */
+    padding: 150px 20px; /* Increased padding for better spacing */
     text-align: center;
     color: #fff;
     position: relative;
@@ -337,13 +340,13 @@ iframe {
 
 .trip-card-header {
     background-color: #247BA0;
-    padding-bottom: 7px;
+    padding-bottom: 40px;
 }
 /* Call to Action Button */
 .trip-cta {
     background-color: #ff8000;
     color: #fff;
-    padding: 15px 30px;
+    padding: 20px 30px;
     text-decoration: none;
     font-size: 1.5rem;
     border-radius: 5px;
@@ -369,8 +372,8 @@ iframe {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 30px; /* Space between the header and the trip cards */
-    padding-top: 20px; /* Add some padding at the top */
+    margin-bottom: 10px; /* Space between the header and the trip cards */
+    padding-top: 30px; /* Add some padding at the top */
     color: #000;
 }
 
@@ -379,10 +382,10 @@ iframe {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding: 20px 20px; /* Padding for spacing */
+    padding: 40px 20px; /* Padding for spacing */
     flex-wrap: wrap;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     background-color: #1d3461;
 }
 
